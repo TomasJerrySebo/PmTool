@@ -6,8 +6,11 @@ import ProjectDetails from "./components/projects/ProjectDetails";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject";
-
 class App extends Component {
+  state = {
+    name: "Tomas",
+    age: 24
+  };
   render() {
     return (
       <BrowserRouter>
@@ -25,5 +28,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
